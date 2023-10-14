@@ -1,6 +1,6 @@
-package org.example.service;
+package org.rmm.service;
 
-import org.example.terminal.CommandRunner;
+import org.rmm.terminal.CommandRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

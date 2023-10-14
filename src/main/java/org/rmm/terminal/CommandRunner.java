@@ -1,4 +1,4 @@
-package org.example.terminal;
+package org.rmm.terminal;
 
 import org.springframework.stereotype.Service;
 

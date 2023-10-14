@@ -1,6 +1,6 @@
-package org.example.service;
+package org.rmm.service;
 
-import org.example.dto.SystemResultDto;
+import org.rmm.dto.SystemResultDto;
 import org.springframework.stereotype.Service;
 import oshi.SystemInfo;
 import oshi.hardware.HardwareAbstractionLayer;

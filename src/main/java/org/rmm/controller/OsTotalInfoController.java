@@ -1,8 +1,8 @@
-package org.example.controller;
+package org.rmm.controller;
 
-import org.example.dto.Command;
-import org.example.service.CommandService;
-import org.example.service.OsInformationService;
+import org.rmm.dto.Command;
+import org.rmm.service.CommandService;
+import org.rmm.service.OsInformationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

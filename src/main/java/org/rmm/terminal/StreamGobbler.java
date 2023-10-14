@@ -1,6 +1,4 @@
-package org.example.terminal;
-
-import org.springframework.stereotype.Service;
+package org.rmm.terminal;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package org.example.dto;
+package org.rmm.dto;
 
 import oshi.hardware.*;
 import oshi.software.os.OSFileStore;
