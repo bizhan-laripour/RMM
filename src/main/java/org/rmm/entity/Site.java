@@ -1,6 +1,8 @@
 package org.rmm.entity;
 
-import javax.persistence.*;
+
+import jakarta.persistence.*;
+
 import java.util.List;
 
 @Entity
@@ -11,7 +13,7 @@ public class Site {
     private Long id;
 
     @OneToMany
-    @JoinColumn(name = "parentSite_id")
+    @JoinColumn(name = "PARENT_SITE_ID")
     private List<Site> site;
 
 

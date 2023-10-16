@@ -1,36 +1,47 @@
 package org.rmm.entity;
 
+import jakarta.persistence.*;
 import org.rmm.enums.DeviceCategory;
 import org.rmm.enums.DeviceType;
 import org.rmm.enums.InstallWay;
 
-import javax.persistence.*;
+
 import java.util.Date;
 
 @Entity
+@Table(name = "TBL_DEVICE")
 public class Device {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
     @OneToOne
-    @JoinColumn(name = "site_id")
+    @JoinColumn(name = "SITE_ID")
     private Site siteOrSubSite;
 
     @OneToOne
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(name = "CUSTOMER_ID")
     private Customer customer;
 
     @OneToOne
-    @JoinColumn(name = "agent_id")
+    @JoinColumn(name = "AGENT_ID")
     private Agent agent;
 
-    @Enumerated(EnumType.STRING)
-    private DeviceCategory deviceCategory;
-
-    @Enumerated(EnumType.STRING)
-    private DeviceType deviceType;
+//    @Enumerated(EnumType.STRING)
+//    private DeviceCategory deviceCategory;
+//
+//    @Enumerated(EnumType.STRING)
+//    private DeviceType deviceType;
 
     private String version;
 
@@ -45,10 +56,10 @@ public class Device {
     private String notes;
 
     private Integer port;
-
-    @Enumerated(EnumType.STRING)
-    private InstallWay installWay;
-
+//
+//    @Enumerated(EnumType.STRING)
+//    private InstallWay installWay;
+//
     private String username;
 
     private String password;
@@ -61,13 +72,6 @@ public class Device {
 
     private Date dateTime;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Site getSiteOrSubSite() {
         return siteOrSubSite;
@@ -91,22 +95,6 @@ public class Device {
 
     public void setAgent(Agent agent) {
         this.agent = agent;
-    }
-
-    public DeviceCategory getDeviceCategory() {
-        return deviceCategory;
-    }
-
-    public void setDeviceCategory(DeviceCategory deviceCategory) {
-        this.deviceCategory = deviceCategory;
-    }
-
-    public DeviceType getDeviceType() {
-        return deviceType;
-    }
-
-    public void setDeviceType(DeviceType deviceType) {
-        this.deviceType = deviceType;
     }
 
     public String getVersion() {
@@ -163,14 +151,6 @@ public class Device {
 
     public void setPort(Integer port) {
         this.port = port;
-    }
-
-    public InstallWay getInstallWay() {
-        return installWay;
-    }
-
-    public void setInstallWay(InstallWay installWay) {
-        this.installWay = installWay;
     }
 
     public String getUsername() {

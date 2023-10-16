@@ -1,6 +1,12 @@
 package org.rmm.entity;
 
-import javax.persistence.*;
+
+import jakarta.persistence.*;
+import org.rmm.enums.Color;
+import org.rmm.enums.Criteria;
+import org.rmm.enums.CustomerSendType;
+import org.rmm.enums.SendType;
+
 import java.util.Date;
 
 @Entity
@@ -10,18 +16,12 @@ public class AlertSeverity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String color;
+    @Enumerated(EnumType.STRING)
+    private Color color;
 
-    private Boolean sms;
+    private Integer delayToCreateTicket;
 
-    private Boolean email;
-
-    private Boolean ticket;
-
-    private Date delayToCreateTicket;
-
-    @OneToOne
-    @JoinColumn(name = "criteria_id")
+    @Enumerated(EnumType.STRING)
     private Criteria criteria;
 
     private String emailText;
@@ -29,6 +29,15 @@ public class AlertSeverity {
     private String smsText;
 
     private String ticketText;
+
+    @Enumerated(EnumType.STRING)
+    private SendType sendType;
+
+    @Enumerated(EnumType.STRING)
+    private CustomerSendType sendBySms;
+
+    @Enumerated(EnumType.STRING)
+    private CustomerSendType sendByEmail;
 
     public Long getId() {
         return id;
@@ -38,43 +47,19 @@ public class AlertSeverity {
         this.id = id;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
-    public Boolean getSms() {
-        return sms;
-    }
-
-    public void setSms(Boolean sms) {
-        this.sms = sms;
-    }
-
-    public Boolean getEmail() {
-        return email;
-    }
-
-    public void setEmail(Boolean email) {
-        this.email = email;
-    }
-
-    public Boolean getTicket() {
-        return ticket;
-    }
-
-    public void setTicket(Boolean ticket) {
-        this.ticket = ticket;
-    }
-
-    public Date getDelayToCreateTicket() {
+    public Integer getDelayToCreateTicket() {
         return delayToCreateTicket;
     }
 
-    public void setDelayToCreateTicket(Date delayToCreateTicket) {
+    public void setDelayToCreateTicket(Integer delayToCreateTicket) {
         this.delayToCreateTicket = delayToCreateTicket;
     }
 
@@ -108,5 +93,29 @@ public class AlertSeverity {
 
     public void setTicketText(String ticketText) {
         this.ticketText = ticketText;
+    }
+
+    public SendType getSendType() {
+        return sendType;
+    }
+
+    public void setSendType(SendType sendType) {
+        this.sendType = sendType;
+    }
+
+    public CustomerSendType getSendBySms() {
+        return sendBySms;
+    }
+
+    public void setSendBySms(CustomerSendType sendBySms) {
+        this.sendBySms = sendBySms;
+    }
+
+    public CustomerSendType getSendByEmail() {
+        return sendByEmail;
+    }
+
+    public void setSendByEmail(CustomerSendType sendByEmail) {
+        this.sendByEmail = sendByEmail;
     }
 }
