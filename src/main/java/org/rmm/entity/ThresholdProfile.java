@@ -6,12 +6,15 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-public class ThresholdProfile {
+public class ThresholdProfile{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @OneToOne
+    @JoinColumn(name = "threshold_id")
+    private Threshold threshold;
 
     @ManyToMany
     @JoinTable(name = "SITE_THRESHOLD" , joinColumns = @JoinColumn(name = "PROFILE_ID") , inverseJoinColumns = @JoinColumn(name = "SITE_ID"))

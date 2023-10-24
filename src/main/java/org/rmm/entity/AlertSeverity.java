@@ -19,6 +19,10 @@ public class AlertSeverity {
     @Enumerated(EnumType.STRING)
     private Color color;
 
+    @OneToOne
+    @JoinColumn(name = "THRESHOLD_ID")
+    private Threshold threshold;
+
     private Integer delayToCreateTicket;
 
     @Enumerated(EnumType.STRING)
@@ -117,5 +121,13 @@ public class AlertSeverity {
 
     public void setSendByEmail(CustomerSendType sendByEmail) {
         this.sendByEmail = sendByEmail;
+    }
+
+    public Threshold getThreshold() {
+        return threshold;
+    }
+
+    public void setThreshold(Threshold threshold) {
+        this.threshold = threshold;
     }
 }

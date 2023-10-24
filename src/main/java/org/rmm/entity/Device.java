@@ -1,12 +1,9 @@
 package org.rmm.entity;
 
 import jakarta.persistence.*;
-import org.rmm.enums.DeviceCategory;
-import org.rmm.enums.DeviceType;
-import org.rmm.enums.InstallWay;
-
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "TBL_DEVICE")
@@ -16,14 +13,9 @@ public class Device {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
+    @ManyToMany
+    @JoinTable(name = "THRESHOLD_PAUSED_CONDITION" , joinColumns = @JoinColumn(name = "DEVICE_ID") , inverseJoinColumns = @JoinColumn(name = "THRESHOLD_ID"))
+    private List<Threshold> thresholds;
 
     @OneToOne
     @JoinColumn(name = "SITE_ID")
@@ -33,9 +25,6 @@ public class Device {
     @JoinColumn(name = "CUSTOMER_ID")
     private Customer customer;
 
-    @OneToOne
-    @JoinColumn(name = "AGENT_ID")
-    private Agent agent;
 
 //    @Enumerated(EnumType.STRING)
 //    private DeviceCategory deviceCategory;
@@ -56,7 +45,7 @@ public class Device {
     private String notes;
 
     private Integer port;
-//
+    //
 //    @Enumerated(EnumType.STRING)
 //    private InstallWay installWay;
 //
@@ -72,6 +61,21 @@ public class Device {
 
     private Date dateTime;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public List<Threshold> getThresholds() {
+        return thresholds;
+    }
+
+    public void setThresholds(List<Threshold> thresholds) {
+        this.thresholds = thresholds;
+    }
 
     public Site getSiteOrSubSite() {
         return siteOrSubSite;
@@ -89,13 +93,6 @@ public class Device {
         this.customer = customer;
     }
 
-    public Agent getAgent() {
-        return agent;
-    }
-
-    public void setAgent(Agent agent) {
-        this.agent = agent;
-    }
 
     public String getVersion() {
         return version;
