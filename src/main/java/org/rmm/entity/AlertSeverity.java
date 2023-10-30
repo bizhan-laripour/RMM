@@ -10,11 +10,7 @@ import org.rmm.enums.SendType;
 import java.util.Date;
 
 @Entity
-public class AlertSeverity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class AlertSeverity extends BaseEntity{
 
     @Enumerated(EnumType.STRING)
     private Color color;
@@ -43,13 +39,6 @@ public class AlertSeverity {
     @Enumerated(EnumType.STRING)
     private CustomerSendType sendByEmail;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Color getColor() {
         return color;

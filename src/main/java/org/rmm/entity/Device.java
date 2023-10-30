@@ -1,17 +1,17 @@
 package org.rmm.entity;
 
 import jakarta.persistence.*;
+import org.rmm.enums.DeviceCategory;
+import org.rmm.enums.DeviceType;
+import org.rmm.enums.InstallWay;
 
 import java.util.Date;
 import java.util.List;
 
 @Entity
 @Table(name = "TBL_DEVICE")
-public class Device {
+public class Device extends BaseEntity{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
     @ManyToMany
     @JoinTable(name = "THRESHOLD_PAUSED_CONDITION" , joinColumns = @JoinColumn(name = "DEVICE_ID") , inverseJoinColumns = @JoinColumn(name = "THRESHOLD_ID"))
@@ -26,11 +26,11 @@ public class Device {
     private Customer customer;
 
 
-//    @Enumerated(EnumType.STRING)
-//    private DeviceCategory deviceCategory;
-//
-//    @Enumerated(EnumType.STRING)
-//    private DeviceType deviceType;
+    @Enumerated(EnumType.STRING)
+    private DeviceCategory deviceCategory;
+
+    @Enumerated(EnumType.STRING)
+    private DeviceType deviceType;
 
     private String version;
 
@@ -45,10 +45,10 @@ public class Device {
     private String notes;
 
     private Integer port;
-    //
-//    @Enumerated(EnumType.STRING)
-//    private InstallWay installWay;
-//
+
+    @Enumerated(EnumType.STRING)
+    private InstallWay installWay;
+
     private String username;
 
     private String password;
@@ -61,13 +61,6 @@ public class Device {
 
     private Date dateTime;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public List<Threshold> getThresholds() {
         return thresholds;
@@ -196,5 +189,29 @@ public class Device {
 
     public void setDateTime(Date dateTime) {
         this.dateTime = dateTime;
+    }
+
+    public DeviceCategory getDeviceCategory() {
+        return deviceCategory;
+    }
+
+    public void setDeviceCategory(DeviceCategory deviceCategory) {
+        this.deviceCategory = deviceCategory;
+    }
+
+    public DeviceType getDeviceType() {
+        return deviceType;
+    }
+
+    public void setDeviceType(DeviceType deviceType) {
+        this.deviceType = deviceType;
+    }
+
+    public InstallWay getInstallWay() {
+        return installWay;
+    }
+
+    public void setInstallWay(InstallWay installWay) {
+        this.installWay = installWay;
     }
 }

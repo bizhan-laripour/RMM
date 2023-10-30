@@ -6,15 +6,14 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-public class ThresholdProfile{
+public class ThresholdProfile extends BaseEntity{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "threshold_id")
-    private Threshold threshold;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "PROFILE_ID")
+    private List<Threshold> thresholds;
+
 
     @ManyToMany
     @JoinTable(name = "SITE_THRESHOLD" , joinColumns = @JoinColumn(name = "PROFILE_ID") , inverseJoinColumns = @JoinColumn(name = "SITE_ID"))
@@ -27,14 +26,6 @@ public class ThresholdProfile{
     @ManyToMany
     @JoinTable(name = "AGENT_THRESHOLD" , joinColumns = @JoinColumn(name = "PROFILE_ID") , inverseJoinColumns = @JoinColumn(name = "DEVICE_ID"))
     private List<Device> devices;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public List<Site> getSites() {
         return sites;
@@ -58,5 +49,13 @@ public class ThresholdProfile{
 
     public void setDevices(List<Device> devices) {
         this.devices = devices;
+    }
+
+    public List<Threshold> getThresholds() {
+        return thresholds;
+    }
+
+    public void setThresholds(List<Threshold> thresholds) {
+        this.thresholds = thresholds;
     }
 }

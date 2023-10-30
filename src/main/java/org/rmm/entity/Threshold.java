@@ -10,11 +10,7 @@ import org.rmm.enums.WindowsEventSeverity;
 import java.util.List;
 
 @Entity
-public class Threshold {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Threshold extends BaseEntity{
 
     private Boolean isActive;
 
@@ -70,13 +66,7 @@ public class Threshold {
      * @return
      */
 //    private Product product;
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+//
 
     public Boolean getActive() {
         return isActive;
@@ -253,4 +243,5 @@ public class Threshold {
     public void setItems(Integer items) {
         this.items = items;
     }
+
 }

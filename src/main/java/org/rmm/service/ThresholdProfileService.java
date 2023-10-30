@@ -1,20 +1,17 @@
 package org.rmm.service;
 
+import org.rmm.entity.Threshold;
 import org.rmm.entity.ThresholdProfile;
 import org.rmm.repository.ThresholdProfileRepository;
 import org.springframework.stereotype.Service;
 
-@Service
-public class ThresholdProfileService {
+import java.util.List;
 
-    private final ThresholdProfileRepository repository;
+@Service
+public class ThresholdProfileService extends GenericService<ThresholdProfile , ThresholdProfileRepository>{
+
 
     public ThresholdProfileService(ThresholdProfileRepository repository) {
-        this.repository = repository;
-    }
-
-
-    public ThresholdProfile saveThresholdProfile(ThresholdProfile thresholdProfile){
-        return repository.save(thresholdProfile);
+        super(repository);
     }
 }
