@@ -27,6 +27,7 @@ public class ThresholdProfile extends BaseEntity{
     @JoinTable(name = "AGENT_THRESHOLD" , joinColumns = @JoinColumn(name = "PROFILE_ID") , inverseJoinColumns = @JoinColumn(name = "DEVICE_ID"))
     private List<Device> devices;
 
+
     public List<Site> getSites() {
         return sites;
     }

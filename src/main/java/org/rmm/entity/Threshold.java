@@ -12,6 +12,7 @@ import java.util.List;
 @Entity
 public class Threshold extends BaseEntity{
 
+
     private Boolean isActive;
 
 

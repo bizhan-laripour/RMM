@@ -4,30 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a002487-bdc7-4e8b-86e4-3a895bc6aa8d" name="Changes" comment="">
+    <list default="true" id="5a002487-bdc7-4e8b-86e4-3a895bc6aa8d" name="Changes" comment="last push">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rmm/config/SpringFoxConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/controller/ThresholdProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/controller/ThresholdProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/AlertSeverity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/AlertSeverity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Site.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Site.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/config/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/config/OpenApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/controller/GenericController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/controller/GenericController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Threshold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Threshold.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/ThresholdProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/ThresholdProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/repository/AlertSeverityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/repository/AlertSeverityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/repository/DeviceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/repository/DeviceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/repository/SiteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/repository/SiteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/repository/ThresholdProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/repository/ThresholdProfileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/repository/ThresholdRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/repository/ThresholdRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/AlertSeverityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/AlertSeverityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/DeviceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/OsInformationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/OsInformationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/SiteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/SiteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/ThresholdProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/ThresholdProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/ThresholdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/ThresholdService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/enums/DeviceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/enums/DeviceCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/enums/DeviceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/enums/DeviceType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/enums/InstallWay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/enums/InstallWay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/GenericService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/GenericService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,11 +80,43 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697525381210</updated>
-      <workItem from="1697525382243" duration="19975000" />
+      <workItem from="1697525382243" duration="24528000" />
     </task>
+    <task id="LOCAL-00001" summary="last push">
+      <option name="closed" value="true" />
+      <created>1698661643122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698661643122</updated>
+    </task>
+    <task id="LOCAL-00002" summary="last push">
+      <option name="closed" value="true" />
+      <created>1698661782463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698661782463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last push" />
+    <option name="LAST_COMMIT_MESSAGE" value="last push" />
   </component>
 </project>
