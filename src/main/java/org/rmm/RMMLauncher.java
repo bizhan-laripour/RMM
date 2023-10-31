@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Bean;
 import oshi.SystemInfo;
 
 @SpringBootApplication
-public class MyTest extends SpringBootServletInitializer {
+public class RMMLauncher extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-        SpringApplication.run(MyTest.class , args);
+        SpringApplication.run(RMMLauncher.class , args);
 
     }
 

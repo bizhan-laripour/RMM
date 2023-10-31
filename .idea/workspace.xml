@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a002487-bdc7-4e8b-86e4-3a895bc6aa8d" name="Changes" comment="last push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rmm/config/SpringFoxConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/config/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/config/OpenApiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/controller/GenericController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/controller/GenericController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Threshold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/Threshold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/entity/ThresholdProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/entity/ThresholdProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/enums/DeviceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/enums/DeviceCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/enums/DeviceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/enums/DeviceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/enums/InstallWay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/enums/InstallWay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/service/GenericService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/service/GenericService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rmm/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rmm/RMMLauncher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +19,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -63,14 +55,32 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="MyTest" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager" selected="Docker.Dockerfile">
+    <configuration name="RMMLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="RMM" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.rmm.MyTest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.rmm.RMMLauncher" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697525381210</updated>
-      <workItem from="1697525382243" duration="24528000" />
+      <workItem from="1697525382243" duration="26997000" />
     </task>
     <task id="LOCAL-00001" summary="last push">
       <option name="closed" value="true" />
@@ -98,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698661782463</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="last push">
+      <option name="closed" value="true" />
+      <created>1698676451424</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698676451424</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
